@@ -61,6 +61,7 @@ const App = () => {
                     </table>
                   </div>
                   <div className="font-bold py-2 px-4 rounded-b-xl w-full text-center border-y  bg-blue-300">ราคาทั้งหมด  {user.totalprice} บาท</div>
+                  
                 </div>
               </div>
             ))}
