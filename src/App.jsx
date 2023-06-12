@@ -34,7 +34,7 @@ const App = () => {
                 <div className="border rounded-xl w-full">
                   <div className="flex justify-between p-2">
                     <div className="flex gap-8 items-center">
-                      <div>โต๊ะ : {user.numoftable}</div>
+                      <div>{user.numoftable}</div>
                       <div>วันที่และเวลา : {user.ordertime}</div>
                     </div>
                   </div>
