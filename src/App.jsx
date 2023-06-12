@@ -70,7 +70,7 @@ const App = () => {
                     <div className="flex gap-8 items-center">
                       <div>{user.numoftable}</div>
                       <div>วันที่และเวลา : {user.ordertime}</div>
-                      </div>
+                    </div>
                     {/* check status */}
                     {user.cookstatus === 1 ? (
                       <div className="bg-green-200 py-2 px-4 rounded-full">ทำแล้ว</div>
@@ -79,7 +79,7 @@ const App = () => {
                         ยังไม่ได้ทำ
                       </div>
                     )}
-                
+
                   </div>
                   <div className="flex justify-center bg-white">
                     <table className="w-full">
@@ -103,8 +103,14 @@ const App = () => {
                       </tbody>
                     </table>
                   </div>
-                  <div className="font-bold py-2 px-4 rounded-b-xl w-full text-center border-y">ราคาทั้งหมด  {user.totalprice} บาท</div>
-                 
+                  <div className="flex justify-between p-2 font-bold py-2 px-4 rounded-b-xl w-full text-center border-y">
+                    <div>
+                      ราคาทั้งหมด
+                    </div>
+                    <div>
+                      {user.totalprice} บาท
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
